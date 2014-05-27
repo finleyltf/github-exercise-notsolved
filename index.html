@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <title>Search</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="jquery.jqpagination.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+</head>
+<body>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-5 col-md-offset-3">
+            <h1>Github repo search application</h1>
+            <hr/>
+            <div class="input-group col-md-12" >
+                <input id="search_string" type="text" class="form-control"/>
+                <span class="input-group-btn">
+                    <button class="btn btn-primary" onclick="displayResult()">Get repos</button>
+                </span>
+            </div>
+            <div>
+
+            </div>
+            <hr/>
+            <div id="results_container"></div>
+            <div class="pagination" id="pagination" style="display: none">
+                <a href="#" class="first" data-action="first"><button type="button" class="btn btn-primary">&laquo;</button></a>
+                <a href="#" class="first" data-action="first"><button class="btn btn-primary">&lsaquo;</button></a>
+                <input class="" type="text" readonly="readonly" data-max-page="40"/>
+                <a href="#" class="next" data-action="next"><button class="btn btn-primary">&rsaquo;</button></a>
+                <a href="#" class="last" data-action="last"><button class="btn btn-primary">&raquo;</button></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+
+</html>
